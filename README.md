@@ -63,7 +63,7 @@ The width and height of the checkbox.
     size={30}/>
 ```
 
-## style
+#### style
 
 Optional object to customize the color, backgroundColor, borderRadius and borderWidth.
 
@@ -80,7 +80,7 @@ Defaults:
     borderRadius: 0
     borderWidth: 2
 
-## onChange
+#### onChange
 Function to be called when toggling the checkbox.
 
 ```jsx
