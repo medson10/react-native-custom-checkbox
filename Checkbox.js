@@ -49,7 +49,7 @@ class Checkbox extends Component {
     _toggleCheck() {
         var checked = !this.state.checked;
         this.setState({ checked: checked });
-        this.props.onChange && this.props.onChange(checked);
+        this.props.onChange && this.props.onChange(this.props.name, checked);
     }
 }
 
