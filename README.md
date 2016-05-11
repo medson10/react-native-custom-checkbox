@@ -1,7 +1,7 @@
 
 # Custom Checkbox React Native
 
-It's a React Native checkbox that can be customize.
+It's a React Native checkbox that can be customize. Works for both Android and iOS.
 
 ![demo](https://raw.githubusercontent.com/caroaguilar/images-gifs/master/react-native-custom-checkbox/demo.gif)
 
