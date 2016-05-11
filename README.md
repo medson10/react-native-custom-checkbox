@@ -3,6 +3,8 @@
 
 It's a React Native checkbox that can be customize.
 
+![demo](https://raw.githubusercontent.com/caroaguilar/images-gifs/master/react-native-custom-checkbox/demo.gif)
+
 ## Install
 
 Install the package via npm:
