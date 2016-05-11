@@ -4,7 +4,7 @@ import { Text, TouchableHighlight, View } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import _ from 'underscore';
 
-var BACKGROUND_COLOR, BORDER_RADIUS, BORDER_WIDTH, COLOR, MARGIN, PADDING, SIZE;
+var BACKGROUND_COLOR, BORDER_RADIUS, BORDER_WIDTH, COLOR, MARGIN, SIZE;
 
 class Checkbox extends Component {
     constructor(props) {
@@ -16,7 +16,6 @@ class Checkbox extends Component {
             checked: false,
             color: '#000',
             margin: 2,
-            padding: 0,
             name: '',
             onChange: null,
             size: 20
@@ -32,7 +31,6 @@ class Checkbox extends Component {
         BORDER_RADIUS = this.state.borderRadius;
         BORDER_WIDTH = this.state.borderWidth;
         MARGIN = this.state.margin;
-        PADDING = this.state.padding;
         COLOR = this.state.color;
         SIZE = this.state.size;
 
@@ -41,7 +39,7 @@ class Checkbox extends Component {
                 onPress={() => { this._toggleCheck() }}
                 style={{backgroundColor: BACKGROUND_COLOR, borderColor: COLOR,
                         borderRadius: BORDER_RADIUS, borderWidth: BORDER_WIDTH,
-                        height: SIZE, margin: MARGIN, padding: PADDING, width: SIZE }}>
+                        height: SIZE, margin: MARGIN, width: SIZE }}>
                 <View>
                     { this.state.checked &&
                     <Icon name='check' size={SIZE - 5 } color={COLOR}/> }
