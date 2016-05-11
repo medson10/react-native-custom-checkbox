@@ -41,7 +41,7 @@ Import the component:
 <Checkbox
     checked={true}
     style={{backgroundColor: '#f2f2f2', color:'#900', borderRadius: 5}}
-    onChange={(checked) => _myFunction(checked)}/>
+    onChange={(name, checked) => _myFunction(name, checked)}/>
 ```
 
 ### Properties
@@ -94,7 +94,7 @@ borderWidth and margin.
     checked={true}
     style={{backgroundColor: '#f2f2f2', color:'#900', borderRadius: 5,
             borderWidth: 2, margin: 10}}
-    onChange={(checked) => _myFunction(checked)}/>
+    onChange={(name, checked) => _myFunction(name, checked)}/>
 ```
 
 Defaults:
