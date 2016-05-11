@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { Text, TouchableHighlight, View } from 'react-native';
 
 import Icon from 'react-native-vector-icons/FontAwesome';
@@ -9,6 +9,7 @@ var BACKGROUND_COLOR, BORDER_RADIUS, BORDER_WIDTH, COLOR, MARGIN, SIZE;
 class Checkbox extends Component {
     constructor(props) {
         super(props);
+
         this.state = {
             backgroundColor: '#FFF',
             borderRadius: 0,
@@ -30,8 +31,8 @@ class Checkbox extends Component {
         BACKGROUND_COLOR = this.state.backgroundColor;
         BORDER_RADIUS = this.state.borderRadius;
         BORDER_WIDTH = this.state.borderWidth;
-        MARGIN = this.state.margin;
         COLOR = this.state.color;
+        MARGIN = this.state.margin;
         SIZE = this.state.size;
 
         return (
@@ -53,6 +54,14 @@ class Checkbox extends Component {
         this.setState({ checked: checked });
         this.props.onChange && this.props.onChange(this.props.name, checked);
     }
+}
+
+Checkbox.propTypes = {
+    checked: PropTypes.bool,
+    name: PropTypes.string,
+    onChange: PropTypes.func,
+    size: PropTypes.number,
+    style: PropTypes.object,
 }
 
 module.exports = Checkbox;
