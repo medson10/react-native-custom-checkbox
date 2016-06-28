@@ -1,6 +1,6 @@
 {
   "name": "react-native-custom-checkbox",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Customizable Checkbox component for React Native",
   "main": "Checkbox.js",
   "scripts": {
