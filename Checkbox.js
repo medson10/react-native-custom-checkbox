@@ -27,6 +27,11 @@ class Checkbox extends Component {
         this.setState(_.extend(this.props.style, _.omit(this.props, 'style')))
     }
 
+    componentWillReceiveProps(nextProps) {
+        this.props = nextProps;
+        this.setState({ checked: nextProps.checked});
+    }
+    
     render() {
         BACKGROUND_COLOR = this.state.backgroundColor;
         BORDER_RADIUS = this.state.borderRadius;
