@@ -24,7 +24,7 @@ class Checkbox extends Component {
     }
 
     componentDidMount() {
-        this.setState(_.extend(this.props.style, _.omit(this.props, 'style')))
+        this.setState(_.extend({}, this.props.style, _.omit(this.props, 'style')))
     }
 
     componentWillReceiveProps(nextProps) {
