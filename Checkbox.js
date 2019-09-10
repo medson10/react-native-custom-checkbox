@@ -30,6 +30,7 @@ class Checkbox extends PureComponent {
 
   componentWillReceiveProps(nextProps) {
     this.props = nextProps;
+    this.setState(_.extend({}, this.props.style, _.omit(this.props, 'style')))
   }
 
   render() {
@@ -73,7 +74,7 @@ class Checkbox extends PureComponent {
 
 Checkbox.propTypes = {
   checked: PropTypes.bool,
-  withProps: PropTypes.bool,
+  withPress: PropTypes.bool,
   name: PropTypes.string,
   onChange: PropTypes.func,
   size: PropTypes.number,
